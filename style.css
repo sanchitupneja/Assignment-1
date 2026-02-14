@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, rgb(137,165,197), rgb(133,202,196));
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgb(235,235,240);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: rgb(75,90,200);
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid rgb(200,200,210);
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, rgb(110,100,220), rgb(120,100,210));
+    color: white;
+}
+
+.btn-secondary {
+    background: linear-gradient(90deg, rgb(120,100,210), rgb(130,110,220));
+    color: white;
+    margin-right: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.top-buttons {
+    margin-bottom: 15px;
+}
+
+.event-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.empty {
+    color: gray;
+}
+
+.demo-card {
+    margin: 20px;
+}
+
+#demoBox {
+    background: rgb(220,220,230);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
