@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Event Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎯 Smart Event Dashboard</h1>
+</header>
+
+<div class="container">
+
+    <div class="card form-card">
+        <h2>Add New Event</h2>
+        <form id="eventForm">
+            <label>Event Title:</label>
+            <input type="text" id="title" required>
+
+            <label>Event Date:</label>
+            <input type="date" id="date" required>
+
+            <label>Category:</label>
+            <select id="category">
+                <option>Conference</option>
+                <option>Workshop</option>
+                <option>Meetup</option>
+                <option>Webinar</option>
+            </select>
+
+            <label>Description:</label>
+            <textarea id="description" rows="4"></textarea>
+
+            <button type="submit" class="btn-primary">Add Event</button>
+        </form>
+    </div>
+
+    <div class="card events-card">
+        <h2>My Events</h2>
+        <div class="top-buttons">
+            <button id="clearEvents" class="btn-secondary">Clear All Events</button>
+            <button id="addSample" class="btn-secondary">Add Sample Events</button>
+        </div>
+        <div id="eventList">
+            <p class="empty">No events yet. Add your first event!</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="card demo-card">
+    <h2>DOM Manipulation Demo</h2>
+    <h3>innerText vs innerHTML vs textContent</h3>
+    <div id="demoBox">
+        Original HTML: &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces<br>
+        innerHTML: Renders HTML tags --> <strong>Bold Text</strong> with spaces<br>
+        innerText: Removes HTML, collapses spaces --> Bold Text with spaces<br>
+        textContent: Removes HTML, keeps spaces --> Bold Text   with spaces
+    </div>
+    <p id="keyPressed">You pressed: None</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
